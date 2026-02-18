@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive English Coaching for Global Brazilian Professionals by Daby - Next Station English</title>
-    <meta name="description" content="Executive English Coaching: Acelere sua carreira com nosso método focado em negócios e oportunidades globais.">
+
+    <title>Inglês Executivo para Líderes Brasileiros | Executive English Coaching by Daby - Next Station English</title>
+
+    <meta name="description" content="Inglês executivo e coaching em inglês para diretores e líderes brasileiros com atuação global. Acelere sua carreira com um método estratégico focado em reuniões, apresentações, negociações e decisões de alto nível.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.nextstationenglish.com/" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Executive English Coaching for Global Brazilian Leaders | Next Station English">
+    <meta property="og:description" content="Coaching em inglês executivo para diretores e líderes brasileiros que precisam se posicionar com clareza, confiança e impacto no cenário global.">
+    <meta property="og:url" content="https://www.nextstationenglish.com/">
+    <meta property="og:image" content="https://www.nextstationenglish.com/images/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Executive English Coaching for Global Brazilian Leaders">
+    <meta name="twitter:description" content="Inglês executivo estratégico para líderes brasileiros que atuam no cenário global.">
+    <meta name="twitter:image" content="https://www.nextstationenglish.com/images/og-image.jpg">
 
     <!-- Icons (Font Awesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -16,8 +34,28 @@
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- GA4 (replace G-XXXXXXX with your Measurement ID) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX');
+    </script>
+    -->
 </head>
 <body>
+
+    <!-- INTRO VIDEO OVERLAY (TELA DE CARREGAMENTO) -->
+    <div id="intro-video-overlay">
+        <video id="intro-video" class="intro-video" autoplay muted playsinline preload="metadata">
+            <source src="videos/111.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    <!-- FIM INTRO VIDEO OVERLAY -->
 
     <!-- Header -->
     <header id="main-header">
@@ -29,327 +67,904 @@
                     </div>
                 </a>
             </div>
+
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#como-funciona">Como Funciona</a></li>
-                    <li><a href="#nossos-desafios">Cursos</a></li>
-                    <li><a href="#diferenciais">Nossos Valores</a></li>
-                    <li><a href="#agendamento-cta">Agendamento</a></li>
-                    <li><a href="#matrix-section">Impacto Global</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#como-funciona" data-pt="Como Funciona" data-en="How It Works">Como Funciona</a></li>
+                    <li><a href="#nossos-desafios" data-pt="Cursos" data-en="Programs">Cursos</a></li>
+                    <li><a href="#diferenciais" data-pt="Nossos Valores" data-en="Our Values">Nossos Valores</a></li>
+                    <li><a href="#planos-formatos" data-pt="Planos" data-en="Plans">Planos</a></li>
+                    <li><a href="#blog" data-pt="Insights" data-en="Insights">Insights</a></li>
+                    <li><a href="#matrix-section" data-pt="Impacto Global" data-en="Global Impact">Impacto Global</a></li>
+                    <li><a href="#depoimentos" data-pt="Depoimentos" data-en="Testimonials">Depoimentos</a></li>
+                    <li><a href="#faq" data-pt="FAQ" data-en="FAQ">FAQ</a></li>
                 </ul>
             </nav>
+
             <div class="header-actions">
-                <div class="language-selector">
-                    <select aria-label="Seletor de Idioma">
-                        <option value="pt-br">PT-BR</option>
-                        <option value="en">EN</option>
-                        <option value="es">ES</option>
-                    </select>
-                </div>
+                <!-- TOGGLE DE IDIOMA PT / EN -->
+                <button id="lang-toggle" class="lang-toggle" aria-label="Alternar idioma">
+                    <span class="lang-pill lang-pt active">PT</span>
+                    <span class="lang-pill lang-en">EN</span>
+                </button>
             </div>
+
             <button class="menu-toggle" aria-label="Abrir menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
 
-    <!-- Hero Section (First Fold) -->
+    <!-- Hero Section -->
     <section id="hero" class="hero-section">
         <div class="hero-video-wrapper">
-            <!-- BACKGROUND VIDEO CONFIGURATION -->
             <video autoplay muted loop playsinline poster="images/video-poster.jpg" class="hero-video">
                 <source src="videos/11.mp4" type="video/mp4">
                 Seu navegador não suporta a tag de vídeo.
             </video>
-            <!-- O TÍTULO AGORA ESTÁ AQUI, SOBREPOSTO AO VÍDEO -->
-            <h1 class="hero-title video-overlay-title">Executive English Coaching for <span class="global-colors">Global</span> <span class="brazilian-flag-text">Brazilian</span> Professionals by Daby.</h1>
-            <!-- Botões de CTA sobrepostos ao vídeo -->
-            <div class="hero-buttons overlay-buttons">
-                <a href="#nossos-desafios" class="btn-cta">Ver Cursos</a>
-                <a href="https://wa.me/5511986108003" target="_blank" style="text-decoration: underline;" class="btn-cta-secondary">Fale Conosco</a>
-            </div>
+
+            <h1
+                class="hero-title video-overlay-title"
+                style="margin-top: 80px;"
+                data-pt="Executive English Coaching para Líderes Brasileiros com Atuação Global"
+                data-en="Executive English Coaching for Global Brazilian Leaders"
+            >
+                Executive English Coaching for
+                <span class="global-colors">Global</span>
+                <span class="brazilian-flag-text" aria-label="Brazilian">
+                    <span class="br-letter">B</span>
+                    <span class="br-letter">R</span>
+                    <span class="br-letter">A</span>
+                    <span class="br-letter">Z</span>
+                    <span class="br-letter">I</span>
+                    <span class="br-letter">L</span>
+                    <span class="br-letter">I</span>
+                    <span class="br-letter">A</span>
+                    <span class="br-letter">N</span>
+                </span>
+                Leaders
+            </h1>
+
+            <p
+                class="hero-subtitle"
+                data-pt="Coaching executivo em inglês para líderes brasileiros que precisam se posicionar com clareza, confiança e impacto no cenário global."
+                data-en="Executive English coaching for Brazilian leaders who need to show up with clarity, confidence, and impact on the global stage."
+            >
+                Executive English coaching for Brazilian leaders who need to show up with clarity, confidence, and impact on the global stage.
+            </p>
         </div>
     </section>
 
-    <!-- NOVA SEÇÃO: Micro-tagline (entre Hero e Destaques em Vídeo) -->
+    <!-- Micro-tagline -->
     <section id="micro-tagline-section" class="section-padding bg-dark-micro text-white text-center">
         <div class="container">
-            <p class="micro-tagline">"Transforme sua fluência em influência. O mundo está esperando."</p>
+            <p
+                class="micro-tagline"
+                data-pt="&quot;Transforme sua fluência em influência. O mundo está esperando.&quot;"
+                data-en="&quot;Turn your fluency into influence. The world is already watching.&quot;"
+            >
+                "Transforme sua fluência em influência. O mundo está esperando."
+            </p>
         </div>
     </section>
-    <!-- FIM DA NOVA SEÇÃO -->
 
-    <!-- NOVA SEÇÃO: Programa Elite: Acelerando o Sucesso de Líderes Brasileiros no Cenário Global -->
+    <!-- Programa Elite -->
     <section id="section-videos-highlights" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title text-white">Programa Elite: Acelerando o Sucesso de Líderes Brasileiros no Cenário Global</h2>
-            <p class="section-subtitle text-white">Descubra os pilares que capacitam executivos a transcender a fluência e alcançar uma performance comunicativa de excelência internacional.</p>
+        <div class="container text-center">
+            <h2
+                class="section-title text-white"
+                data-pt="Programa Elite: Acelerando o Sucesso de Líderes Brasileiros no Cenário Global"
+                data-en="Elite Program: Accelerating Brazilian Leaders in the Global Arena"
+            >
+                Programa Elite: Acelerando o Sucesso de Líderes Brasileiros no Cenário Global
+            </h2>
+            <p
+                class="section-subtitle text-white"
+                data-pt="Descubra os pilares que capacitam executivos a transcender a fluência e alcançar uma performance comunicativa de excelência internacional."
+                data-en="Discover the pillars that help executives go beyond fluency and communicate with international‑level excellence."
+            >
+                Descubra os pilares que capacitam executivos a transcender a fluência e alcançar uma performance comunicativa de excelência internacional.
+            </p>
+
             <div class="video-highlights-grid">
                 <div class="video-highlight-item">
                     <i class="fas fa-comments"></i>
-                    <h3>Comunicação Persuasiva e de Alto Impacto</h3>
-                    <p>Domine a arte da comunicação estratégica, garantindo clareza, precisão e persuasão em todas as suas interações, desde reuniões críticas a apresentações de alto nível.</p>
+                    <h3
+                        data-pt="Comunicação Persuasiva e de Alto Impacto"
+                        data-en="High‑Impact Persuasive Communication"
+                    >
+                        Comunicação Persuasiva e de Alto Impacto
+                    </h3>
+                    <p
+                        data-pt="Domine a arte da comunicação estratégica, garantindo clareza, precisão e persuasão em todas as suas interações, desde reuniões críticas a apresentações de alto nível."
+                        data-en="Master strategic communication to bring clarity, precision, and persuasion to every interaction—from critical meetings to high‑stakes presentations."
+                    >
+                        Domine a arte da comunicação estratégica, garantindo clareza, precisão e persuasão em todas as suas interações, desde reuniões críticas a apresentações de alto nível.
+                    </p>
                 </div>
                 <div class="video-highlight-item">
                     <i class="fas fa-chart-line"></i>
-                    <h3>Estratégias de Negociação Global</h3>
-                    <p>Capacite-se com táticas avançadas de negociação, fechando acordos complexos e gerenciando cenários desafiadores com maestria em um contexto internacional.</p>
+                    <h3
+                        data-pt="Estratégias de Negociação Global"
+                        data-en="Global Negotiation Strategies"
+                    >
+                        Estratégias de Negociação Global
+                    </h3>
+                    <p
+                        data-pt="Capacite-se com táticas avançadas de negociação, fechando acordos complexos e gerenciando cenários desafiadores com maestria em um contexto internacional."
+                        data-en="Equip yourself with advanced negotiation strategies to close complex deals and navigate challenging scenarios in international environments."
+                    >
+                        Capacite-se com táticas avançadas de negociação, fechando acordos complexos e gerenciando cenários desafiadores com maestria em um contexto internacional.
+                    </p>
                 </div>
                 <div class="video-highlight-item">
                     <i class="fas fa-users"></i>
-                    <h3>Liderança Carismática e Influência Estratégica</h3>
-                    <p>Cultive uma presença de liderança inspiradora, projetando autoridade e influenciando equipes multiculturais para alcançar objetivos ambiciosos em escala global.</p>
+                    <h3
+                        data-pt="Liderança Carismática e Influência Estratégica"
+                        data-en="Charismatic Leadership and Strategic Influence"
+                    >
+                        Liderança Carismática e Influência Estratégica
+                    </h3>
+                    <p
+                        data-pt="Cultive uma presença de liderança inspiradora, projetando autoridade e influenciando equipes multiculturais para alcançar objetivos ambiciosos em escala global."
+                        data-en="Develop an inspiring leadership presence, projecting authority and influencing multicultural teams to reach ambitious global goals."
+                    >
+                        Cultive uma presença de liderança inspiradora, projetando autoridade e influenciando equipes multiculturais para alcançar objetivos ambiciosos em escala global.
+                    </p>
                 </div>
+            </div>
+
+            <!-- ÁREAS ATENDIDAS -->
+            <div class="elite-areas-wrapper">
+                <h3 class="elite-areas-title">Área</h3>
+                <p class="elite-areas-list">
+                    <span>Accounting</span> ·
+                    <span>Finance</span> ·
+                    <span>Law</span> ·
+                    <span>Marketing and Sales</span> ·
+                    <span>Manufacturing and Quality</span> ·
+                    <span>Project Management</span> ·
+                    <span>HR</span> ·
+                    <span>IT</span> ·
+                    <span>Medicine and Health</span> ·
+                    <span>International Trade</span>
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- NOVA SEÇÃO: Strategic Executive English Positioning Framework -->
+    <!-- Strategic Executive English Positioning Framework -->
     <section id="section-text-image-right" class="section-padding bg-dark text-white">
-        <div class="container content-grid">
-            <div class="text-content">
-                <h2 class="section-title yellow-neon-text">Strategic Executive English Positioning Framework</h2>
-                <p class="daby-title-tagline">Daby – Strategic Business English Coaching Consultant</p>
-                <!-- O VÍDEO PLACEHOLDER ENTRA AQUI -->
-                <div class="framework-video-wrapper">
-                    <video autoplay muted loop playsinline poster="images/video-poster-framework.jpg" class="framework-video">
-                        <source src="videos/framework-video.mp4" type="video/mp4">
-                        Seu navegador não suporta a tag de vídeo.
-                    </video>
-                    <!-- Overlay para o efeito faded -->
-                    <div class="video-overlay-faded"></div>
+        <div class="container">
+            <div class="text-content full-width">
+                <h2
+                    class="section-title no-neon"
+                    data-pt="Strategic Executive English Positioning Framework"
+                    data-en="Strategic Executive English Positioning Framework"
+                >
+                    Strategic Executive English Positioning Framework
+                </h2>
+                <p
+                    class="daby-title-tagline"
+                    data-pt="Daby – Strategic Business English Coaching Consultant"
+                    data-en="Daby – Strategic Business English Coaching Consultant"
+                >
+                    Daby – Strategic Business English Coaching Consultant
+                </p>
+
+                <div class="framework-box-grid">
+                    <div class="box framework-box"><span>MEETINGS & PRESENTATIONS</span></div>
+                    <div class="box framework-box"><span>EMAILS</span></div>
+                    <div class="box framework-box"><span>REPORT WRITING</span></div>
+                    <div class="box framework-box"><span>DISCUSSION</span></div>
+                    <div class="box framework-box"><span>CONTRACTS</span></div>
+                    <div class="box framework-box"><span>CONVINCING SKILLS</span></div>
+                    <div class="box framework-box"><span>PROFESSIONAL ETIQUETTE</span></div>
+                    <div class="box framework-box"><span>APPOINTMENTS</span></div>
+                    <div class="box framework-box"><span>FINANCE & MONEY</span></div>
+                    <div class="box framework-box"><span>IT ESSENTIAL LANGUAGE</span></div>
+                    <div class="box framework-box"><span>MARKETING & SALES</span></div>
+                    <div class="box framework-box"><span>LEADERSHIP & MANAGEMENT</span></div>
+                    <div class="box framework-box"><span>INTERCULTURAL COMMUNICATION</span></div>
+                    <div class="box framework-box"><span>SOFT SKILLS</span></div>
+                    <div class="box framework-box"><span>ENGLISH FOR EMPLOYABILITY – INTERVIEW PREPARATIONS</span></div>
+                    <div class="box framework-box"><span>FUNCTIONAL LANGUAGE</span></div>
+                    <div class="box framework-box"><span>PROJECT</span></div>
                 </div>
-                <a href="https://www.linkedin.com/in/vishul-daby-476a8b266/" target="_blank" style="text-decoration: underline;" class="btn-cta-secondary">Conheça Daby no LinkedIn</a>
-            </div>
-            <div class="image-content">
-                <img src="images/daby-profile.jpg" alt="Daby, Executive English Coach" class="img-fluid">
+
+                <div class="framework-image-wrapper">
+                    <img src="images/1.png"
+                         alt="Strategic Executive English Positioning Framework"
+                         class="framework-image"
+                         loading="lazy">
+                </div>
+
+                <a
+                    href="https://www.linkedin.com/in/vishul-daby-476a8b266/"
+                    target="_blank"
+                    style="text-decoration: underline;"
+                    class="btn-cta-secondary"
+                    data-pt="Conheça Daby no LinkedIn"
+                    data-en="Connect with Daby on LinkedIn"
+                >
+                    Conheça Daby no LinkedIn
+                </a>
             </div>
         </div>
     </section>
-    <!-- FIM DA NOVA SEÇÃO -->
 
-    <!-- Seção "Como Funciona" -->
+    <!-- Como Funciona -->
     <section id="como-funciona" class="section-padding bg-light text-center">
         <div class="container">
-            <h2 class="section-title text-white">Como Funciona o Coaching Executivo</h2>
-            <p class="section-subtitle text-white">Nosso método é desenhado para a sua realidade e seus objetivos de carreira.</p>
+            <h2
+                class="section-title text-white"
+                data-pt="Como Funciona o Coaching Executivo"
+                data-en="How Executive Coaching Works"
+            >
+                Como Funciona o Coaching Executivo
+            </h2>
+            <p
+                class="section-subtitle text-white"
+                data-pt="Nosso método é desenhado para a sua realidade e seus objetivos de carreira."
+                data-en="Our method is built around your reality, your time, and your career goals."
+            >
+                Nosso método é desenhado para a sua realidade e seus objetivos de carreira.
+            </p>
             <div class="how-it-works-grid">
                 <div class="how-it-works-item">
                     <i class="fas fa-chart-line"></i>
-                    <h3>Diagnóstico Personalizado</h3>
-                    <p>Avaliação detalhada do seu nível atual e definição de metas claras e mensuráveis.</p>
+                    <h3 data-pt="Diagnóstico Personalizado" data-en="Personalized Diagnostic">
+                        Diagnóstico Personalizado
+                    </h3>
+                    <p
+                        data-pt="Avaliação detalhada do seu nível atual e definição de metas claras e mensuráveis."
+                        data-en="A detailed assessment of your current level and clear, measurable goals for your growth."
+                    >
+                        Avaliação detalhada do seu nível atual e definição de metas claras e mensuráveis.
+                    </p>
                 </div>
                 <div class="how-it-works-item">
                     <i class="fas fa-book-open"></i>
-                    <h3>Conteúdo Estratégico</h3>
-                    <p>Aulas focadas em cenários de negócios reais, vocabulário executivo e comunicação intercultural.</p>
+                    <h3 data-pt="Conteúdo Estratégico" data-en="Strategic Content">
+                        Conteúdo Estratégico
+                    </h3>
+                    <p
+                        data-pt="Aulas focadas em cenários de negócios reais, vocabulário executivo e comunicação intercultural."
+                        data-en="Sessions built on real business scenarios, executive vocabulary, and cross‑cultural communication."
+                    >
+                        Aulas focadas em cenários de negócios reais, vocabulário executivo e comunicação intercultural.
+                    </p>
                 </div>
                 <div class="how-it-works-item">
                     <i class="fas fa-comments"></i>
-                    <h3>Prática Orientada</h3>
-                    <p>Simulações de reuniões, apresentações e negociações para consolidar o aprendizado.</p>
+                    <h3 data-pt="Prática Orientada" data-en="Guided Practice">
+                        Prática Orientada
+                    </h3>
+                    <p
+                        data-pt="Simulações de reuniões, apresentações e negociações para consolidar o aprendizado."
+                        data-en="Simulations of meetings, presentations, and negotiations to make your learning stick under pressure."
+                    >
+                        Simulações de reuniões, apresentações e negociações para consolidar o aprendizado.
+                    </p>
                 </div>
                 <div class="how-it-works-item">
                     <i class="fas fa-medal"></i>
-                    <h3>Feedback Contínuo</h3>
-                    <p>Análise de performance e ajustes para garantir o desenvolvimento constante e eficaz.</p>
+                    <h3 data-pt="Feedback Contínuo" data-en="Continuous Feedback">
+                        Feedback Contínuo
+                    </h3>
+                    <p
+                        data-pt="Análise de performance e ajustes para garantir o desenvolvimento constante e eficaz."
+                        data-en="Ongoing performance analysis and fine‑tuning so you keep moving, consistently, in the right direction."
+                    >
+                        Análise de performance e ajustes para garantir o desenvolvimento constante e eficaz.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção "Nossos Desafios" (Cursos) -->
+    <!-- Cursos / Programas -->
     <section id="nossos-desafios" class="section-padding bg-dark text-center">
         <div class="container">
-            <h2 class="section-title text-white">Cursos e Programas de Coaching</h2>
-            <p class="section-subtitle text-white">Soluções personalizadas para cada etapa da sua jornada executiva.</p>
+            <h2
+                class="section-title text-white"
+                data-pt="Cursos e Programas de Coaching"
+                data-en="Coaching Tracks and Executive Programs"
+            >
+                Cursos e Programas de Coaching
+            </h2>
+            <p
+                class="section-subtitle text-white"
+                data-pt="Soluções personalizadas para cada etapa da sua jornada executiva."
+                data-en="Tailored solutions for each stage of your executive journey."
+            >
+                Soluções personalizadas para cada etapa da sua jornada executiva.
+            </p>
             <div class="desafios-grid">
                 <div class="desafio-item">
                     <i class="fas fa-globe"></i>
-                    <h3>Global Executive Immersion</h3>
-                    <p>Programa intensivo para líderes que buscam fluência e confiança em ambientes de negócios internacionais.</p>
+                    <h3 data-pt="Global Executive Immersion" data-en="Global Executive Immersion">
+                        Global Executive Immersion
+                    </h3>
+                    <p
+                        data-pt="Programa intensivo para líderes que buscam fluência e confiança em ambientes de negócios internacionais."
+                        data-en="An intensive track for leaders who need fluency and confidence in high‑level international business settings."
+                    >
+                        Programa intensivo para líderes que buscam fluência e confiança em ambientes de negócios internacionais.
+                    </p>
                 </div>
                 <div class="desafio-item">
                     <i class="fas fa-lightbulb"></i>
-                    <h3>Strategic Communication Masterclass</h3>
-                    <p>Foco em comunicação persuasiva, apresentações de alto impacto e negociação em inglês.</p>
+                    <h3 data-pt="Strategic Communication Masterclass" data-en="Strategic Communication Masterclass">
+                        Strategic Communication Masterclass
+                    </h3>
+                    <p
+                        data-pt="Foco em comunicação persuasiva, apresentações de alto impacto e negociação em inglês."
+                        data-en="Deep focus on persuasive communication, high‑impact presentations, and negotiation in English."
+                    >
+                        Foco em comunicação persuasiva, apresentações de alto impacto e negociação em inglês.
+                    </p>
                 </div>
                 <div class="desafio-item">
                     <i class="fas fa-user-tie"></i>
-                    <h3>Leadership English Accelerator</h3>
-                    <p>Desenvolvimento da linguagem de liderança, gestão de equipes multiculturais e influência global.</p>
+                    <h3 data-pt="Leadership English Accelerator" data-en="Leadership English Accelerator">
+                        Leadership English Accelerator
+                    </h3>
+                    <p
+                        data-pt="Desenvolvimento da linguagem de liderança, gestão de equipes multiculturais e influência global."
+                        data-en="A track to sharpen your leadership language, manage multicultural teams, and amplify your global influence."
+                    >
+                        Desenvolvimento da linguagem de liderança, gestão de equipes multiculturais e influência global.
+                    </p>
                 </div>
                 <div class="desafio-item">
                     <i class="fas fa-briefcase"></i>
-                    <h3>Business English for Specific Industries</h3>
-                    <p>Coaching especializado para setores como finanças, tecnologia, marketing e direito.</p>
+                    <h3 data-pt="Business English for Specific Industries" data-en="Business English for Specific Industries">
+                        Business English for Specific Industries
+                    </h3>
+                    <p
+                        data-pt="Coaching especializado para setores como finanças, tecnologia, marketing, direito, indústria, saúde e comércio internacional."
+                        data-en="Specialized coaching for sectors such as finance, technology, marketing, law, industry, healthcare, and international trade."
+                    >
+                        Coaching especializado para setores como finanças, tecnologia, marketing, direito, indústria, saúde e comércio internacional.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção "Nossos Diferenciais" (Valores) -->
-    <section id="diferenciais" class="section-padding bg-light text-center">
+    <!-- O que é Inglês Executivo (Educação SEO) -->
+    <section id="o-que-e-ingles-executivo" class="section-padding bg-dark text-center">
         <div class="container">
-            <h2 class="section-title text-white">Nossos Valores e Diferenciais</h2>
-            <p class="section-subtitle text-white">O que nos torna a escolha ideal para o seu desenvolvimento.</p>
-            <div class="diferenciais-grid">
-                <div class="diferencial-item">
+            <h2 class="section-title text-white"
+                data-pt="O que é Inglês Executivo — e por que não é só mais um curso de inglês?"
+                data-en="What Is Executive English — And Why It’s Not Just Another English Course?">
+                O que é Inglês Executivo — e por que não é só mais um curso de inglês?
+            </h2>
+            <p class="section-subtitle text-white"
+               data-pt="Inglês executivo não é sobre decorar listas de vocabulário ou completar exercícios de gramática. É sobre alinhar sua comunicação em inglês ao nível de decisões que você toma todos os dias como líder."
+               data-en="Executive English is not about memorizing vocabulary lists or filling in grammar worksheets. It’s about aligning your English communication to the level of decisions you make every day as a leader.">
+                Inglês executivo não é sobre decorar listas de vocabulário ou completar exercícios de gramática. É sobre alinhar sua comunicação em inglês ao nível de decisões que você toma todos os dias como líder.
+            </p>
+
+            <div class="how-it-works-grid">
+                <div class="how-it-works-item">
+                    <i class="fas fa-user-tie"></i>
+                    <h3 data-pt="Do inglês genérico ao inglês do seu cargo"
+                        data-en="From Generic English to Role‑Specific Language">
+                        Do inglês genérico ao inglês do seu cargo
+                    </h3>
+                    <p data-pt="Em vez de aprender frases soltas, você desenvolve a linguagem que um diretor, gerente ou founder realmente precisa para liderar reuniões, alinhar times globais e defender decisões estratégicas."
+                       data-en="Instead of learning random phrases, you develop the language a director, manager or founder actually needs to lead meetings, align global teams, and defend strategic decisions.">
+                        Em vez de aprender frases soltas, você desenvolve a linguagem que um diretor, gerente ou founder realmente precisa para liderar reuniões, alinhar times globais e defender decisões estratégicas.
+                    </p>
+                </div>
+                <div class="how-it-works-item">
                     <i class="fas fa-handshake"></i>
-                    <h3>Parceria Estratégica</h3>
-                    <p>Vamos além do ensino, tornando-nos seus parceiros no sucesso global.</p>
+                    <h3 data-pt="Da fluência para a influência"
+                        data-en="From Fluency to Influence">
+                        Da fluência para a influência
+                    </h3>
+                    <p data-pt="Muitos executivos já têm um “bom inglês”, mas travam quando precisam negociar, discordar com elegância ou conduzir uma conversa de alto risco. O foco aqui é influência, não apenas fluência."
+                       data-en="Many executives already have “good English” but freeze when they need to negotiate, disagree diplomatically, or lead a high‑stakes discussion. The focus here is influence, not just fluency.">
+                        Muitos executivos já têm um “bom inglês”, mas travam quando precisam negociar, discordar com elegância ou conduzir uma conversa de alto risco. O foco aqui é influência, não apenas fluência.
+                    </p>
                 </div>
-                <div class="diferencial-item">
-                    <i class="fas fa-star"></i>
-                    <h3>Excelência Comprovada</h3>
-                    <p>Metodologia refinada e resultados tangíveis para sua carreira.</p>
-                </div>
-                <div class="diferencial-item">
-                    <i class="fas fa-brain"></i>
-                    <h3>Inteligência Cultural</h3>
-                    <p>Preparamos você para navegar com confiança em qualquer cultura de negócios.</p>
-                </div>
-                <div class="diferencial-item">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Flexibilidade e Adaptação</h3>
-                    <p>Programas customizados para se encaixar na sua agenda e necessidades.</p>
+                <div class="how-it-works-item">
+                    <i class="fas fa-network-wired"></i>
+                    <h3 data-pt="Linguagem alinhada aos seus desafios reais"
+                        data-en="Language Aligned with Your Real‑World Challenges">
+                        Linguagem alinhada aos seus desafios reais
+                    </h3>
+                    <p data-pt="Cada sessão é construída a partir de situações reais: reuniões de board, apresentações de resultado, negociações de contrato, conversas difíceis com pares ou superiores."
+                       data-en="Every session is built from real situations: board meetings, results presentations, contract negotiations, and difficult conversations with peers or superiors.">
+                        Cada sessão é construída a partir de situações reais: reuniões de board, apresentações de resultado, negociações de contrato, conversas difíceis com pares ou superiores.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção "Agendamento CTA" -->
-    <section id="agendamento-cta" class="section-padding bg-dark text-center">
+    <!-- Planos e Formatos de Trabalho (com expectativas) -->
+    <section id="planos-formatos" class="section-padding bg-light text-center">
         <div class="container">
-            <h2 class="section-title text-white">Pronto para Desbloquear Seu Potencial Global?</h2>
-            <p class="section-subtitle text-white">Agende uma sessão estratégica e descubra como podemos acelerar sua jornada.</p>
-            <a href="https://wa.me/5511986108003" target="_blank" style="text-decoration: underline;" class="btn-cta">Agendar Sessão Estratégica</a>
+            <h2 class="section-title text-white"
+                data-pt="Planos e Formatos de Trabalho"
+                data-en="Plans and Ways to Work Together">
+                Planos e Formatos de Trabalho
+            </h2>
+            <p class="section-subtitle text-white"
+               data-pt="Formatos flexíveis para líderes com agenda cheia, mas sem tempo para comunicação mediana."
+               data-en="Flexible formats for leaders with full schedules but no time for mediocre communication.">
+                Formatos flexíveis para líderes com agenda cheia, mas sem tempo para comunicação mediana.
+            </p>
+
+            <p class="section-subtitle text-white"
+               data-pt="Normalmente trabalhamos em ciclos de 8 a 24 semanas, com sessões online de 60 minutos, uma vez por semana. Os valores são estruturados em programas fechados — não vendemos 'aula solta', e sim um processo com começo, meio e fim."
+               data-en="We typically work in 8‑ to 24‑week cycles, with 60‑minute online sessions once a week. Fees are structured as complete programs — we don’t sell isolated “classes”, but a process with a clear beginning, middle, and end.">
+                Normalmente trabalhamos em ciclos de 8 a 24 semanas, com sessões online de 60 minutos, uma vez por semana. Os valores são estruturados em programas fechados — não vendemos "aula solta", e sim um processo com começo, meio e fim.
+            </p>
+
+            <div class="desafios-grid">
+                <div class="desafio-item">
+                    <i class="fas fa-user-clock"></i>
+                    <h3 data-pt="Coaching Individual 1:1"
+                        data-en="1:1 Executive Coaching">
+                        Coaching Individual 1:1
+                    </h3>
+                    <p data-pt="Sessões semanais ou quinzenais, totalmente personalizadas, focadas nos seus desafios imediatos: reuniões, apresentações, negociações, transições de carreira."
+                       data-en="Weekly or bi‑weekly sessions, fully tailored around your immediate challenges: meetings, presentations, negotiations, career transitions.">
+                        Sessões semanais ou quinzenais, totalmente personalizadas, focadas nos seus desafios imediatos: reuniões, apresentações, negociações, transições de carreira.
+                    </p>
+                </div>
+                <div class="desafio-item">
+                    <i class="fas fa-building"></i>
+                    <h3 data-pt="Programas In‑Company"
+                        data-en="In‑Company Programs">
+                        Programas In‑Company
+                    </h3>
+                    <p data-pt="Treinamentos estratégicos para times de liderança, áreas‑chave e talentos críticos que precisam operar em inglês no mesmo nível em que já performam em português."
+                       data-en="Strategic training for leadership teams and critical talent who need to operate in English at the same level they already perform in Portuguese.">
+                        Treinamentos estratégicos para times de liderança, áreas‑chave e talentos críticos que precisam operar em inglês no mesmo nível em que já performam em português.
+                    </p>
+                </div>
+                <div class="desafio-item">
+                    <i class="fas fa-rocket"></i>
+                    <h3 data-pt="Sprints Intensivos"
+                        data-en="Intensive Sprints">
+                        Sprints Intensivos
+                    </h3>
+                    <p data-pt="Blocos de 4 a 8 semanas para missões específicas: preparação para apresentações decisivas, rodadas de investimento, roadshows, entrevistas em inglês ou processos seletivos internacionais."
+                       data-en="4‑ to 8‑week sprints for specific missions: preparation for decisive presentations, fundraising rounds, roadshows, high‑stakes interviews or international recruitment processes.">
+                        Blocos de 4 a 8 semanas para missões específicas: preparação para apresentações decisivas, rodadas de investimento, roadshows, entrevistas em inglês ou processos seletivos internacionais.
+                    </p>
+                </div>
+            </div>
+
+            <a href="https://wa.me/SEU_NUMERO_AQUI"
+               target="_blank"
+               style="text-decoration: underline;"
+               class="btn-cta-primary"
+               data-pt="Quero entender qual formato faz sentido para mim"
+               data-en="I want to see which format fits me best">
+                Quero entender qual formato faz sentido para mim
+            </a>
         </div>
     </section>
 
-    <!-- Seção "Matrix Phrase" -->
-    <section id="matrix-section" class="section-padding bg-light text-center">
+    <!-- BLOG / INSIGHTS -->
+    <section id="blog" class="section-padding bg-dark text-center">
         <div class="container">
-            <p id="matrix-phrase">"Você escolhe a pílula azul ou a pílula vermelha?"</p>
+            <h2 class="section-title text-white"
+                data-pt="Insights para Líderes em Inglês Executivo"
+                data-en="Insights for Leaders in Executive English">
+                Insights para Líderes em Inglês Executivo
+            </h2>
+            <p class="section-subtitle text-white"
+               data-pt="Artigos práticos com roteiros, frases e estratégias para reuniões, apresentações e negociações em inglês."
+               data-en="Practical articles with scripts, phrases, and strategies for meetings, presentations, and negotiations in English.">
+                Artigos práticos com roteiros, frases e estratégias para reuniões, apresentações e negociações em inglês.
+            </p>
+
+            <div class="desafios-grid">
+                <div class="desafio-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3
+                        data-pt="Como liderar reuniões de diretoria em inglês com confiança"
+                        data-en="How Brazilian Executives Can Lead Board Meetings in English with Confidence">
+                        Como liderar reuniões de diretoria em inglês com confiança
+                    </h3>
+                    <p
+                        data-pt="Um roteiro prático para estruturar abertura, alinhamento de expectativas, condução de discussão e fechamento em inglês — sem perder autoridade."
+                        data-en="A practical script to structure the opening, expectation alignment, discussion flow, and closing in English — without losing authority.">
+                        Um roteiro prático para estruturar abertura, alinhamento de expectativas, condução de discussão e fechamento em inglês — sem perder autoridade.
+                    </p>
+                    <!-- Quando tiver artigo, trocar # por /blog/reunioes-diretoria-ingles -->
+                    <a href="#" class="btn-cta-secondary"
+                       data-pt="Ler artigo (em breve)"
+                       data-en="Read article (coming soon)">
+                        Ler artigo (em breve)
+                    </a>
+                </div>
+
+                <div class="desafio-item">
+                    <i class="fas fa-presentation"></i>
+                    <h3
+                        data-pt="Inglês para apresentações de diretoria: 7 frases que evitam mal‑entendidos caros"
+                        data-en="English for Board Presentations: 7 Phrases That Prevent Costly Misunderstandings">
+                        Inglês para apresentações de diretoria: 7 frases que evitam mal‑entendidos caros
+                    </h3>
+                    <p
+                        data-pt="Expressões estratégicas para apresentar resultados, pedir aprovação e reagir a perguntas difíceis sem parecer inseguro ou agressivo."
+                        data-en="Strategic expressions to present results, ask for approval, and respond to tough questions without sounding insecure or aggressive.">
+                        Expressões estratégicas para apresentar resultados, pedir aprovação e reagir a perguntas difíceis sem parecer inseguro ou agressivo.
+                    </p>
+                    <a href="#" class="btn-cta-secondary"
+                       data-pt="Ler artigo (em breve)"
+                       data-en="Read article (coming soon)">
+                        Ler artigo (em breve)
+                    </a>
+                </div>
+
+                <div class="desafio-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3
+                        data-pt="Como preparar uma reunião de alinhamento com a matriz em inglês"
+                        data-en="How to Prepare an Alignment Meeting with HQ in English">
+                        Como preparar uma reunião de alinhamento com a matriz em inglês
+                    </h3>
+                    <p
+                        data-pt="Passo a passo para organizar agenda, enviar pré‑leitura, conduzir alinhamento e registrar decisões em inglês de forma clara e profissional."
+                        data-en="Step‑by‑step guidance to prepare the agenda, send pre‑reads, run the alignment, and document decisions in English clearly and professionally.">
+                        Passo a passo para organizar agenda, enviar pré‑leitura, conduzir alinhamento e registrar decisões em inglês de forma clara e profissional.
+                    </p>
+                    <a href="#" class="btn-cta-secondary"
+                       data-pt="Ler artigo (em breve)"
+                       data-en="Read article (coming soon)">
+                        Ler artigo (em breve)
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Seção "Depoimentos" -->
-    <section id="depoimentos" class="section-padding bg-dark text-center">
+    <!-- Matrix / Impacto Global (mantém seu conteúdo atual aqui se já tiver) -->
+    <section id="matrix-section" class="section-padding bg-dark text-center">
         <div class="container">
-            <h2 class="section-title text-white">O Que Nossos Clientes Dizem</h2>
-            <p class="section-subtitle text-white">Histórias de sucesso que inspiram.</p>
+            <h2 id="matrix-phrase">You Are the Matrix.</h2>
+            <p class="matrix-subtext">Sua comunicação em inglês é o sistema operacional da sua liderança global.</p>
+            <p class="matrix-body">
+                Quando você ganha clareza, precisão e presença em inglês, todo o resto — sua carreira, sua influência, suas oportunidades — responde.
+            </p>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="section-padding bg-light text-center">
+        <div class="container">
+            <h2
+                class="section-title text-white"
+                data-pt="Depoimentos de Líderes"
+                data-en="Leaders’ Testimonials"
+            >
+                Depoimentos de Líderes
+            </h2>
+            <p
+                class="section-subtitle text-white"
+                data-pt="Profissionais que transformaram seu inglês em uma vantagem competitiva real."
+                data-en="Professionals who turned their English into a real competitive advantage."
+            >
+                Profissionais que transformaram seu inglês em uma vantagem competitiva real.
+            </p>
             <div class="depoimentos-grid">
                 <div class="depoimento-item">
-                    <p>"O coaching da Daby transformou minha forma de me comunicar em reuniões internacionais. Sinto-me muito mais confiante e eficaz."</p>
-                    <h4>- Ana P., Diretora de Marketing Global</h4>
+                    <p>"Depois de 3 meses, parei de traduzir mentalmente. Hoje discuto estratégias em inglês com a mesma segurança que tenho em português."</p>
+                    <h4>Diretora de Marketing — São Paulo</h4>
                 </div>
                 <div class="depoimento-item">
-                    <p>"Nunca imaginei que aprender inglês pudesse ser tão estratégico e focado em resultados. Um divisor de águas na minha carreira."</p>
-                    <h4>- Carlos M., CEO de Tecnologia</h4>
+                    <p>"Eu já tinha inglês avançado, mas travava em negociações. Agora entro em calls globais com outra postura."</p>
+                    <h4>Head de Operações — Rio de Janeiro</h4>
                 </div>
                 <div class="depoimento-item">
-                    <p>"A metodologia da Next Station English é única. Fui do básico ao avançado com uma clareza e propósito que nunca tive antes."</p>
-                    <h4>- Sofia L., Gerente de Projetos Internacionais</h4>
+                    <p>"O programa me ajudou a reposicionar minha imagem perante a matriz. Deixei de ser o ‘cara técnico’ para ser visto como voz estratégica."</p>
+                    <h4>Gerente de TI — Curitiba</h4>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção FAQ -->
-    <section id="faq" class="section-padding bg-light text-center">
+    <!-- FAQ -->
+    <section id="faq" class="section-padding bg-dark text-center">
         <div class="container">
-            <h2 class="section-title text-white">Perguntas Frequentes</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <h3 class="faq-question">Qual a diferença do coaching executivo para aulas de inglês tradicionais?</h3>
-                    <div class="faq-answer">
-                        <p>Nosso coaching é focado em resultados de negócios, comunicação estratégica e inteligência cultural, indo além da gramática para desenvolver sua influência global.</p>
-                    </div>
+            <h2
+                class="section-title text-white"
+                data-pt="Perguntas Frequentes"
+                data-en="Frequently Asked Questions"
+            >
+                Perguntas Frequentes
+            </h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-pt="Preciso ter um nível mínimo de inglês para começar?"
+                          data-en="Do I need a minimum level of English to start?">
+                        Preciso ter um nível mínimo de inglês para começar?
+                    </span>
                 </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Os programas são personalizados?</h3>
-                    <div class="faq-answer">
-                        <p>Sim, cada programa é customizado para suas necessidades, nível atual e objetivos de carreira, garantindo um aprendizado relevante e eficaz.</p>
-                    </div>
+                <div class="faq-answer">
+                    <p
+                        data-pt="Sim. Este programa é voltado para quem já consegue se comunicar em inglês em algum nível, mas precisa elevar drasticamente clareza, precisão e confiança em contextos executivos."
+                        data-en="Yes. This program is designed for professionals who can already communicate in English at some level, but need to dramatically increase clarity, precision, and confidence in executive contexts."
+                    >
+                        Sim. Este programa é voltado para quem já consegue se comunicar em inglês em algum nível, mas precisa elevar drasticamente clareza, precisão e confiança em contextos executivos.
+                    </p>
                 </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Como é feita a avaliação inicial?</h3>
-                    <div class="faq-answer">
-                        <p>Realizamos um diagnóstico detalhado que inclui avaliação de fluência, análise de necessidades e definição de metas claras para sua jornada.</p>
-                    </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-pt="Quanto tempo leva para ver resultados práticos?"
+                          data-en="How long does it take to see practical results?">
+                        Quanto tempo leva para ver resultados práticos?
+                    </span>
                 </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Posso agendar uma sessão experimental?</h3>
-                    <div class="faq-answer">
-                        <p>Sim, você pode agendar uma sessão estratégica gratuita para conhecer nossa metodologia e discutir seus objetivos sem compromisso.</p>
-                    </div>
+                <div class="faq-answer">
+                    <p
+                        data-pt="Depende da sua agenda e do ponto de partida, mas muitos executivos relatam mudanças perceptíveis em 6 a 8 semanas quando aplicam o que trabalhamos diretamente nas suas reuniões e apresentações."
+                        data-en="It depends on your schedule and starting point, but many executives report noticeable changes in 6–8 weeks when they apply what we work on directly in their meetings and presentations."
+                    >
+                        Depende da sua agenda e do ponto de partida, mas muitos executivos relatam mudanças perceptíveis em 6 a 8 semanas quando aplicam o que trabalhamos diretamente nas suas reuniões e apresentações.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-pt="Você trabalha com empresas ou apenas com indivíduos?"
+                          data-en="Do you work with companies or only individuals?">
+                        Você trabalha com empresas ou apenas com indivíduos?
+                    </span>
+                </div>
+                <div class="faq-answer">
+                    <p
+                        data-pt="Trabalhamos tanto com executivos individualmente quanto com programas In‑Company, desenhados para times de liderança, áreas estratégicas e talentos em preparação para expansão global."
+                        data-en="We work both with individual executives and In‑Company programs for leadership teams, strategic areas, and high‑potential talent preparing for global expansion."
+                    >
+                        Trabalhamos tanto com executivos individualmente quanto com programas In‑Company, desenhados para times de liderança, áreas estratégicas e talentos em preparação para expansão global.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark">
         <div class="container">
             <div class="footer-logo">
-                <a href="#hero">
-                    <div class="logo-placeholder" aria-label="Logo Next Station English">
-                        <span>NSE</span>
-                    </div>
-                </a>
-                <p>Capacitando líderes brasileiros a dominar o inglês e conquistar o cenário global.</p>
+                <div class="logo-placeholder">
+                    <span>NSE</span>
+                </div>
+                <p>Next Station English — Executive English Coaching para líderes brasileiros com atuação global.</p>
             </div>
             <div class="footer-links">
-                <h4>Links Rápidos</h4>
+                <h4>Links</h4>
                 <ul>
+                    <li><a href="#hero">Início</a></li>
                     <li><a href="#como-funciona">Como Funciona</a></li>
                     <li><a href="#nossos-desafios">Cursos</a></li>
-                    <li><a href="#diferenciais">Nossos Valores</a></li>
-                    <li><a href="#agendamento-cta">Agendamento</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#planos-formatos">Planos</a></li>
+                    <li><a href="#blog">Insights</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
             </div>
             <div class="social-links">
                 <h4>Conecte-se</h4>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/vishul-daby-476a8b266/" target="_blank" style="text-decoration: underline;" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://wa.me/5511986108003" target="_blank" style="text-decoration: underline;" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <!-- Adicione outros links de redes sociais aqui se necessário -->
+                    <a href="https://www.linkedin.com/in/vishul-daby-476a8b266/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Next Station English. Todos os direitos reservados.</p>
+            <p>© <span id="year"></span> Next Station English. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/5511986108003" target="_blank" style="text-decoration: underline;" class="floating-whatsapp-btn" aria-label="Fale conosco pelo WhatsApp">
+    <!-- Botões Flutuantes -->
+    <a href="https://wa.me/SEU_NUMERO_AQUI" class="floating-whatsapp-btn" target="_blank" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Floating LinkedIn Button -->
-    <a href="https://www.linkedin.com/in/vishul-daby-476a8b266/" target="_blank" style="text-decoration: underline;" class="floating-linkedin-btn" aria-label="Conecte-se no LinkedIn">
-        <i class="fab fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/vishul-daby-476a8b266/" class="floating-linkedin-btn" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
     </a>
 
+    <!-- SCRIPT PRINCIPAL -->
     <script>
-        // Toggle de menu para mobile
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.main-nav').classList.toggle('active');
+    document.addEventListener('DOMContentLoaded', function () {
+        /* ====== MENU MOBILE ====== */
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.main-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mainNav.classList.remove('active');
+                });
+            });
+        }
+
+        /* ====== TOGGLE IDIOMA ====== */
+        const langToggle = document.getElementById('lang-toggle');
+        const langPT = document.querySelector('.lang-pt');
+        const langEN = document.querySelector('.lang-en');
+
+        function applyLanguage(lang) {
+            const elements = document.querySelectorAll('[data-pt],[data-en]');
+            elements.forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) el.innerHTML = text;
+            });
+
+            if (lang === 'pt') {
+                langPT.classList.add('active');
+                langEN.classList.remove('active');
+            } else {
+                langEN.classList.add('active');
+                langPT.classList.remove('active');
+            }
+        }
+
+        if (langToggle && langPT && langEN) {
+            langToggle.addEventListener('click', () => {
+                const isPT = langPT.classList.contains('active');
+                applyLanguage(isPT ? 'en' : 'pt');
+            });
+        }
+
+        /* ====== INTRO VIDEO OVERLAY ====== */
+        const introOverlay = document.getElementById('intro-video-overlay');
+        const introVideo = document.getElementById('intro-video');
+
+        function hideIntroOverlay() {
+            if (!introOverlay) return;
+            introOverlay.classList.add('intro-hidden');
+            setTimeout(() => {
+                if (introOverlay && introOverlay.parentNode) {
+                    introOverlay.parentNode.removeChild(introOverlay);
+                }
+                window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+            }, 450);
+        }
+
+        if (introOverlay) {
+            introOverlay.addEventListener('click', hideIntroOverlay);
+        }
+
+        if (introVideo) {
+            introVideo.addEventListener('ended', hideIntroOverlay);
+        }
+
+        // fallback
+        setTimeout(() => {
+            if (document.getElementById('intro-video-overlay')) {
+                hideIntroOverlay();
+            }
+        }, 15000);
+
+        /* ====== FAQ ACORDEON ====== */
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const question = item.querySelector('.faq-question');
+            if (question) {
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            }
         });
 
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(item => {
-            item.addEventListener('click', event => {
-                const faqItem = item.closest('.faq-item');
-                faqItem.classList.toggle('active');
-            });
+        /* ====== DESTACAR ITEM DO MENU PELA SEÇÃO VISÍVEL ====== */
+        const sectionIds = [
+            'como-funciona',
+            'nossos-desafios',
+            'diferenciais',
+            'planos-formatos',
+            'blog',
+            'matrix-section',
+            'depoimentos',
+            'faq'
+        ];
+
+        const navLinksMap = new Map();
+        sectionIds.forEach(id => {
+            const sectionEl = document.getElementById(id);
+            const linkEl = document.querySelector(`.main-nav a[href="#${id}"]`);
+            if (sectionEl && linkEl) {
+                navLinksMap.set(sectionEl, linkEl);
+            }
         });
+
+        if (navLinksMap.size) {
+            const observer = new IntersectionObserver((entries) => {
+                let mostVisible = null;
+                let maxRatio = 0;
+
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && entry.intersectionRatio > maxRatio) {
+                        maxRatio = entry.intersectionRatio;
+                        mostVisible = entry.target;
+                    }
+                });
+
+                if (!mostVisible) return;
+
+                document.querySelectorAll('.main-nav a.active-nav').forEach(a => {
+                    a.classList.remove('active-nav');
+                });
+
+                const activeLink = navLinksMap.get(mostVisible);
+                if (activeLink) {
+                    activeLink.classList.add('active-nav');
+                }
+            }, {
+                threshold: [0.25, 0.5, 0.75]
+            });
+
+            navLinksMap.forEach((link, sectionEl) => observer.observe(sectionEl));
+
+            navLinksMap.forEach((link) => {
+                link.addEventListener('click', () => {
+                    document.querySelectorAll('.main-nav a.active-nav').forEach(a => {
+                        a.classList.remove('active-nav');
+                    });
+                    link.classList.add('active-nav');
+                });
+            });
+        }
+
+        /* ====== ANO NO FOOTER ====== */
+        const yearSpan = document.getElementById('year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    });
+    </script>
+
+    <!-- FAQ STRUCTURED DATA (SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é coaching em inglês executivo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Coaching em inglês executivo é um trabalho individual e estratégico focado na comunicação de alto nível de diretores, gerentes e líderes. Em vez de apenas ensinar gramática, o foco é desenvolver a linguagem que você realmente usa para negociar, liderar equipes, reportar resultados e participar de decisões globais."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre curso de inglês e coaching executivo em inglês?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Um curso de inglês tradicional segue um programa genérico, igual para todos. No coaching executivo em inglês, o conteúdo é desenhado em função do seu cargo, setor, desafios reais e agenda. O objetivo não é apenas fluência, mas posicionamento, clareza e influência em situações de alto impacto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Para quem este programa de inglês executivo é indicado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para diretores, gerentes, founders e profissionais de alta responsabilidade que já têm uma base de inglês, mas precisam de segurança e performance em reuniões, apresentações, negociações e conversas estratégicas com stakeholders globais."
+          }
+        }
+      ]
+    }
     </script>
 </body>
 </html>
